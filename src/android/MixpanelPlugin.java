@@ -329,8 +329,8 @@ public class MixpanelPlugin extends CordovaPlugin {
 
 
     private boolean handlePeopleSetPushId(JSONArray args, final CallbackContext cbCtx) {
-        String pushId = args.optString(0);
-        mixpanel.getPeople().setPushRegistrationId(pushId);
+        // String pushId = args.optString(0);
+        // mixpanel.getPeople().setPushRegistrationId(pushId);
         cbCtx.success();
         return true;
     }
